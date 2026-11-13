@@ -44,15 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const userNameElement = document.getElementById('user-name');
     
     if (userNameElement) {
-        // Periksa jika nama tersimpan di localStorage
         let userName = localStorage.getItem('userName');
-        
-        if (!userName) {
-            // Tampilkan modal kustom daripada prompt
-            showNameModal();
-        } else {
-            // Tampilkan nama yang tersimpan
+        if (userName) {
             displayUserName(userName);
+        } else {
+            displayUserName('Pengunjung');
         }
     }
 });

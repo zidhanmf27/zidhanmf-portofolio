@@ -213,16 +213,40 @@
                             Profil Lebih Lanjut
                         </a>
                     </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-3 gap-3 mt-10 pt-8 border-t border-white/10">
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center hover-lift">
+                            <span class="text-xs text-white/50 block">Jurnal Ilmiah</span>
+                            <span class="text-sm font-bold text-white mt-0.5 block">SINTA 5</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center hover-lift">
+                            <span class="text-xs text-white/50 block">Sertifikasi</span>
+                            <span class="text-sm font-bold text-white mt-0.5 block">BNSP & Dicoding</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center hover-lift">
+                            <span class="text-xs text-white/50 block">Pengalaman</span>
+                            <span class="text-sm font-bold text-white mt-0.5 block">Prog. AML ESDM</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- Konten Kanan - Placeholder GIF Cat -->
-                <div class="g-gif-container animate-fade-in">
-                    <div class="g-gif-container-overlay"></div>
-                    <div class="relative z-10 aspect-square bg-black rounded-2xl flex items-center justify-center p-8 border border-white border-opacity-20">
-                        <!-- Placeholder untuk GIF Cat -->
-                        <div id="g-gif-container-gif-container" class="w-full h-full flex items-center justify-center">
-                            <div class="text-center">
-                                <img src="assets/cat.gif" alt="GIF Cat" class="w-full h-full object-cover">
+                <!-- Konten Kanan - Foto Profil & Tech Badges -->
+                <div class="relative animate-fade-in flex items-center justify-center">
+                    <div class="relative w-full max-w-md aspect-square rounded-3xl p-1 bg-gradient-to-b from-white/20 via-white/5 to-transparent border border-white/20 shadow-2xl backdrop-blur-xl">
+                        <div class="w-full h-full rounded-[22px] overflow-hidden bg-zinc-950 relative group">
+                            <img src="assets/foto-jas.png" alt="Zidhan Maula Fatih" class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                            
+                            <!-- Overlay Info Singkat -->
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-effect border border-white/10 flex justify-between items-center">
+                                <div>
+                                    <p class="text-sm font-bold text-white">Zidhan Maula Fatih</p>
+                                    <p class="text-xs text-white/60">Software Engineer & Data</p>
+                                </div>
+                                <span class="px-2.5 py-1 text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Open to Work
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -282,143 +306,18 @@
         </div>
     </section>
 
-    <!-- Bagian Tugas Kuliah (Lorem Ipsum) -->
+    <!-- Bagian Proyek Pilihan (Featured Projects) -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-black border-t border-white border-opacity-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Tugas Kuliah</h2>
-                <p class="text-white opacity-60 text-lg">Karya pengembangan web selama masa perkuliahan</p>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white border border-white/20 mb-3 inline-block">Karya & Portofolio Teknis</span>
+                <h2 class="text-4xl font-bold mb-4">Proyek Pilihan</h2>
+                <p class="text-white opacity-60 text-lg">Aplikasi web, sistem informasi geografis, dan machine learning yang telah saya kembangkan</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tugas 1 -->
-                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
-                    <!-- Carousel Catshop -->
-                    <div id="carousel-catshop" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
-                        <!-- Slides -->
-                        <div class="carousel-slides w-full h-full relative">
-                            <img src="assets/img-proweb/catshop1.png" alt="Catshop Screenshot 1"
-                                class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100"
-                                data-carousel="catshop" data-index="0">
-                            <img src="assets/img-proweb/catshop2.png" alt="Catshop Screenshot 2"
-                                class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0"
-                                data-carousel="catshop" data-index="1">
-                        </div>
-                        <!-- Dot indicators -->
-                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="catshop" data-dot="0"></span>
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="catshop" data-dot="1"></span>
-                        </div>
-                        <!-- Prev button -->
-                        <button onclick="carouselMove('catshop', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                        </button>
-                        <!-- Next button -->
-                        <button onclick="carouselMove('catshop', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Bootstrap</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Catshop</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Aplikasi Administrasi Penjualan Kucing yang memungkinkan manajemen stok.
-                        </p>
-                        <!-- <div class="flex justify-between items-center mt-auto">
-                            <a href="#" class="text-sm font-semibold text-white hover:underline">Lihat Demo →</a>
-                            <a href="#" class="text-sm text-white/50 hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-                
-                <!-- Proyek 2: Petclinic -->
-                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
-                    <!-- Carousel Petclinic -->
-                    <div id="carousel-petclinic" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
-                        <div class="carousel-slides w-full h-full relative">
-                            <img src="assets/img-proweb/petclinic1.png" alt="Petclinic Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="petclinic" data-index="0">
-                            <img src="assets/img-proweb/petclinic2.png" alt="Petclinic Screenshot 2" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="1">
-                            <img src="assets/img-proweb/petclinic3.png" alt="Petclinic Screenshot 3" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="2">
-                            <img src="assets/img-proweb/petclinic4.png" alt="Petclinic Screenshot 4" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="3">
-                        </div>
-                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="petclinic" data-dot="0"></span>
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="1"></span>
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="2"></span>
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="3"></span>
-                        </div>
-                        <button onclick="carouselMove('petclinic', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                        </button>
-                        <button onclick="carouselMove('petclinic', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Bootstrap</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Petclinic</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Aplikasi manajemen klinik hewan berbasis web untuk pencatatan data hewan, data dokter, dan laporan bulanan.
-                        </p>
-                        <!-- <div class="flex justify-between items-center mt-auto">
-                            <a href="#" class="text-sm font-semibold text-white hover:underline">Lihat Demo →</a>
-                            <a href="#" class="text-sm text-white/50 hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-                
-                <!-- Proyek 3: Roster -->
-                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
-                    <!-- Carousel Roster -->
-                    <div id="carousel-roster" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
-                        <div class="carousel-slides w-full h-full relative">
-                            <img src="assets/img-proweb/roster1.png" alt="Roster Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="roster" data-index="0">
-                            <img src="assets/img-proweb/roster2.png" alt="Roster Screenshot 2" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="roster" data-index="1">
-                        </div>
-                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="roster" data-dot="0"></span>
-                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="roster" data-dot="1"></span>
-                        </div>
-                        <button onclick="carouselMove('roster', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                        </button>
-                        <button onclick="carouselMove('roster', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Roster</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Aplikasi untuk melihat jadwal, ruangan dan  melakukan manajemen peminjaman barang Fakultas Teknik.
-                        </p>
-                        <!-- <div class="flex justify-between items-center mt-auto">
-                            <a href="#" class="text-sm font-semibold text-white hover:underline">Lihat Demo →</a>
-                            <a href="#" class="text-sm text-white/50 hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <!-- Proyek 4: GIS -->
-                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
+                <!-- Proyek 1: GIS (Unggulan + Publikasi SINTA 5) -->
+                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full ring-1 ring-white/20">
                     <div id="carousel-gis" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
                         <div class="carousel-slides w-full h-full relative">
                             <img src="assets/img-proweb/gis1.png" alt="GIS Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="gis" data-index="0">
@@ -442,27 +341,29 @@
                         </button>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Leaflet.js</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Laravel 12</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Terbit Jurnal SINTA 5</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Sistem Informasi Geografis</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Aplikasi Sistem Informasi Geografis untuk visualisasi dan analisis data spasial berbasis peta interaktif.
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Leaflet.js</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Laravel 12</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sistem Informasi Geografis UMKM</h3>
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Aplikasi GIS interaktif untuk visualisasi dan pemetaan sebaran informasi UMKM di Kota Bandung berbasis peta spasial Leaflet.js.
                         </p>
-                        <!-- <div class="flex justify-between items-center mt-auto">
-                            <a href="#" class="text-sm font-semibold text-white hover:underline">Lihat Demo →</a>
-                            <a href="#" class="text-sm text-white/50 hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <div class="pt-4 border-t border-white/10 mt-auto flex items-center justify-between text-xs">
+                            <a href="https://doi.org/10.52362/jisamar.v10i1.2252" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white font-semibold inline-flex items-center gap-1 hover:underline">
+                                Baca Jurnal Ilmiah (JISAMAR) →
                             </a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
-                <!-- Proyek 5: Chatbot -->
-                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
+                <!-- Proyek 2: Chatbot (AI & Machine Learning) -->
+                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full ring-1 ring-white/10">
                     <div id="carousel-chatbot" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
                         <div class="carousel-slides w-full h-full relative">
                             <img src="assets/img-proweb/chatbot1.png" alt="Chatbot Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="chatbot" data-index="0">
@@ -482,26 +383,20 @@
                         </button>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Python</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">JavaScript</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">FastAPI</span>
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Python</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">FastAPI</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">TF-IDF</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Cosine Similarity</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Chatbot</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Membuat Chatbot untuk rekomendasi UMKM Kota Bandung menggunakan Algoritma TF-IDF dan Cosine Similarity.
+                        <h3 class="text-xl font-bold mb-2">Chatbot Rekomendasi UMKM</h3>
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Sistem percakapan cerdas yang memberikan rekomendasi produk UMKM Kota Bandung menggunakan pemrosesan teks dan kalkulasi kemiripan konten.
                         </p>
-                        <!-- <div class="flex justify-between items-center mt-auto">
-                            <a href="#" class="text-sm font-semibold text-white hover:underline">Lihat Demo →</a>
-                            <a href="#" class="text-sm text-white/50 hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
 
-                <!-- Proyek 6: Sistem Informasi Perpustakaan -->
+                <!-- Proyek 3: Sistem Informasi Perpustakaan -->
                 <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
                     <div id="carousel-perpus" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
                         <div class="carousel-slides w-full h-full relative">
@@ -524,17 +419,117 @@
                         </button>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Laravel 12</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
-                            <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Laravel 12</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Sistem Informasi Perpustakaan</h3>
-                        <p class="text-white opacity-70 text-sm leading-relaxed mb-6 flex-grow">
-                            Aplikasi peminjaman buku untuk digitalisasi proses perpustakaan. Anggota dapat mendaftar, melihat katalog, dan meminjam buku. Admin memverifikasi, dan Superadmin mengelola seluruh data.
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Platform digitalisasi pengelolaan sirkulasi buku, verifikasi keanggotaan, pencatatan pinjaman, serta multi-role dashboard (Anggota, Admin, Superadmin).
                         </p>
                     </div>
                 </div>
+
+                <!-- Proyek 4: Roster (Manajemen Peminjaman Barang & Ruang) -->
+                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
+                    <div id="carousel-roster" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
+                        <div class="carousel-slides w-full h-full relative">
+                            <img src="assets/img-proweb/roster1.png" alt="Roster Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="roster" data-index="0">
+                            <img src="assets/img-proweb/roster2.png" alt="Roster Screenshot 2" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="roster" data-index="1">
+                        </div>
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="roster" data-dot="0"></span>
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="roster" data-dot="1"></span>
+                        </div>
+                        <button onclick="carouselMove('roster', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="carouselMove('roster', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Tailwind CSS</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Roster</h3>
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Aplikasi penjadwalan ruang kuliah dan sistem peminjaman sarana prasarana Fakultas Teknik secara terintegrasi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyek 5: Petclinic -->
+                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
+                    <div id="carousel-petclinic" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
+                        <div class="carousel-slides w-full h-full relative">
+                            <img src="assets/img-proweb/petclinic1.png" alt="Petclinic Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="petclinic" data-index="0">
+                            <img src="assets/img-proweb/petclinic2.png" alt="Petclinic Screenshot 2" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="1">
+                            <img src="assets/img-proweb/petclinic3.png" alt="Petclinic Screenshot 3" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="2">
+                            <img src="assets/img-proweb/petclinic4.png" alt="Petclinic Screenshot 4" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="petclinic" data-index="3">
+                        </div>
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="petclinic" data-dot="0"></span>
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="1"></span>
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="2"></span>
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="petclinic" data-dot="3"></span>
+                        </div>
+                        <button onclick="carouselMove('petclinic', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="carouselMove('petclinic', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Bootstrap</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Petclinic</h3>
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Aplikasi manajemen rekam medis klinik hewan untuk pencatatan riwayat pasien hewan, dokter bertugas, dan cetak rekap bulanan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyek 6: Catshop -->
+                <div class="glass-effect rounded-2xl overflow-hidden hover-lift card-border flex flex-col h-full">
+                    <div id="carousel-catshop" class="relative aspect-video bg-zinc-900 overflow-hidden border-b border-white border-opacity-10 group">
+                        <div class="carousel-slides w-full h-full relative">
+                            <img src="assets/img-proweb/catshop1.png" alt="Catshop Screenshot 1" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-100" data-carousel="catshop" data-index="0">
+                            <img src="assets/img-proweb/catshop2.png" alt="Catshop Screenshot 2" class="carousel-img absolute inset-0 w-full h-full object-cover cursor-pointer transition-opacity duration-500 opacity-0" data-carousel="catshop" data-index="1">
+                        </div>
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-100 transition-all" data-carousel="catshop" data-dot="0"></span>
+                            <span class="carousel-dot w-1.5 h-1.5 rounded-full bg-white opacity-40 transition-all" data-carousel="catshop" data-dot="1"></span>
+                        </div>
+                        <button onclick="carouselMove('catshop', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="carouselMove('catshop', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-7 h-7 rounded-full bg-black/50 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-1.5 mb-3">
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">CodeIgniter 3</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">Bootstrap</span>
+                            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-white/10 text-white">MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Catshop</h3>
+                        <p class="text-white opacity-70 text-sm leading-relaxed mb-4 flex-grow">
+                            Sistem point of sales dan inventori administrasi penjualan kebutuhan hewan dengan pencatatan transaksi terpadu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
             </div>
         </div>
     </section>
